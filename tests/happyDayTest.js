@@ -13,13 +13,19 @@ test(`Is Today Friday`, async () => {
   await googleSearchPage.searchFor(`What is Today's date?`);
   await googleResultsPage.resultsContain(`Monday`)
 })
-test(`Is the Weather above 70 Degrees`, async () =>{
+
+test(`Is the Sun Out`, async () =>{
   await googleSearchPage.searchFor(`What is Today's Weather?`);
-  await googleResultsPage.resultsContain(`70`)
+  await googleResultsPage.weatherResultsContain(`Sunny`)
 })
-test(`Is the MTA delayed today`, async () =>{
+
+test(`New Frank Ocean Song`, async () =>{
+  await googleSearchPage.searchFor(`New Frank Ocean Music`);
+  await googleResultsPage.musicResultsContain(`2019`)
 })
-test(`Did Frank Ocean release a new Song`, async () =>{
+
+test(`Something with Food`, async () =>{
 })
-test(`Did Frank Ocean release a new Song`, async () =>{
+
+test(`Something with TV or Art`, async () =>{
 })
