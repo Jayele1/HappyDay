@@ -7,10 +7,10 @@ const googleSearchPage = new GoogleSearchPage();
 const googleResultsPage = new GoogleResultsPage();
 
 
-fixture `Is Today Going to be a good day?`
-  .page `https://www.google.com`;
+fixture `O Happy Day!`
+  .page `https://www.youtube.com/watch?v=z-4mtA6Z88k`;
 
 
-test(`Is Today Friday`, async () => {
-  await t.resizeWindow(300,300)
+test(`Let it play`, async () => {
+  await t.wait(10000000000);
 })
