@@ -8,6 +8,7 @@ export default class GoogleSearchPage {
 
   async searchFor(value){
     await t.typeText(this.searchBox, value);
-    await t.click(this.searchButton);
+    await t.pressKey(`enter`);
+    //await t.click(this.searchButton);
   }
 }
