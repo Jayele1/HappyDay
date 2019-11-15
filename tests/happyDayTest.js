@@ -11,7 +11,7 @@ fixture `Is Today Going to be a good day?`
 
 test(`Is Today Friday`, async () => {
   await googleSearchPage.searchFor(`What is Today's date?`);
-  await googleResultsPage.resultsContain(`Monday`)
+  await googleResultsPage.resultsContain(`Friday`)
 })
 
 test(`Is the Sun Out`, async () =>{
@@ -20,12 +20,16 @@ test(`Is the Sun Out`, async () =>{
 })
 
 test(`New Frank Ocean Song`, async () =>{
-  await googleSearchPage.searchFor(`New Frank Ocean Music`);
+  await googleSearchPage.searchFor(`New Frank Ocean Music?`);
   await googleResultsPage.musicResultsContain(`2019`)
 })
 
-test(`Something with Food`, async () =>{
+test(`Is Trump still President?`, async () =>{
+  await googleSearchPage.searchFor(`Current President`);
+  await googleResultsPage.presidentResultsContain(`Donald Trump`);
 })
 
-test(`Something with TV or Art`, async () =>{
+test(`What fruit is in season now NYC?`, async () =>{
+  await googleSearchPage.searchFor(`What fruit is in season now NYC?`);
+  await googleResultsPage.resultsContain(`Blueberries`)
 })
