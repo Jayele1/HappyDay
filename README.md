@@ -20,10 +20,10 @@ This project is Javascript based, using the testing tool TestCafe
 
 https://devexpress.github.io/testcafe/documentation/getting-started/#running-the-test
 
-From the root folder run this command
+From the root folder of the project run this command
 
     testcafe chrome tests/happyDayTest.js --speed 0.5
     
 
-    - the --speed 0.5 is to slow down the test to see what is going on :)
+    - the '--speed 0.5' is to slow down the test to see what is going on :)
 
